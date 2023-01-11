@@ -1,0 +1,77 @@
+<html> 
+  <head> 
+   <title> Record Form </title> 
+ 
+
+
+<!-- <script type="text/javascript">
+  function Myskills(checkbox) {
+    var checkboxes = document.getElementsByName('skill')
+    checkboxes.forEach((item) => {
+      if (item !== checkbox) item.checked =  false
+    })
+</script> -->
+
+
+</head>
+
+<body bgcolor="LightBlue">
+<h2> Record  Form</h2>
+
+<br>
+<form action="CreateDatabase.php" method="post">
+
+<table>
+<tr>
+<td> Name: </td>
+<td> <input type="text" name="firstname"> </td>
+<tr>
+
+<tr>
+<td> Password: </td>
+<td> <input type="Password" name="password"> </td>
+<tr>
+
+<tr>
+<td> Contact No </td>
+<td> <input type="text" name="number"> </td>
+</tr>
+
+
+<tr>
+<td>Gender</td>
+<td><input type="radio" name="sex" value="Male"  /> Male
+<input type="radio" name="sex" value="Female" /> Female</td>
+</tr>
+
+<tr>
+<td>Programming Skills</td>
+<td><input type="checkbox" name="skill[]" value="C++"  />C++
+<input type="checkbox" name="skill[]" value="Python"   />Python
+<input type="checkbox" name="skill[]" value="Java"     />Java  </td>
+</tr>
+
+
+<tr>
+    <td>Department</td>
+    <td><select id="department" name="dp">
+    <option selected="" value="not selected">Select Department</option> 
+    <option value="CS">Computer Science</option>
+    <option value="CM">Communication & Media</option>
+    <option value="Math">Math</option>
+    </select></td>
+</tr>
+
+
+<tr>
+<td> </td>
+
+<td> <input type="submit" onclick="return confirm('Are you sure you want to submit?')"> 
+     <input type="Reset" value = "Clear"> 
+</td>
+</tr>
+</form>
+</center>
+
+</body>
+</html>
