@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>Quiz Solution</title>
+<script type="text/javascript">
+
+var floors = parseInt(window.prompt("How many floors in your hotel?"));
+var roomPerFloor = parseInt(window.prompt("How many rooms in each floor?"));
+var costOfRoom = parseInt(window.prompt("How much room cost per day in USD?"));
+var firstWeek = parseInt(window.prompt("How many reserved rooms in the first week:"));
+var secondWeek = parseInt(window.prompt("How many reserved rooms in the second week:"));
+var thirdWeek = parseInt(window.prompt("How many reserved rooms in the third week:"));
+var fourthWeek = parseInt(window.prompt("How many reserved rooms in the fourth week:"));
+
+var allRooms = floors * roomPerFloor;
+
+document.write("<table border=1;>");
+
+document.write("<tr><th colspan=4><b>HOTEL MONTHLY REPORT</b></th></tr>");
+
+document.write("<tr align=center><td><b>Week</b></td><td><b>Reserved rooms</b></td><td><b>Non-reserved rooms</b></td><td><b>Incomes</b></td></tr>");
+document.write("<tr align=center><td>1</td><td>"  + firstWeek + "</td><td>" + (allRooms - firstWeek) + "</td><td>" + (firstWeek * costOfRoom) + "</td></tr>");
+document.write("<tr align=center><td>2</td><td>" + secondWeek + "</td><td>" + (allRooms - secondWeek) + "</td><td>" + (secondWeek * costOfRoom) + "</td></tr>");
+document.write("<tr align=center><td>2</td><td>" + thirdWeek + "</td><td>" + (allRooms - thirdWeek) + "</td><td>" + (thirdWeek * costOfRoom) + "</td></tr>");
+document.write("<tr align=center><td>4</td><td>" + fourthWeek + "</td><td>" + (allRooms - fourthWeek) + "</td><td>" + (fourthWeek * costOfRoom) + "</td></tr>");
+document.write("<tr align=center><td><b>Total</b></td><td>" + (firstWeek + secondWeek + thirdWeek + fourthWeek) + "</td><td>" + (allRooms - firstWeek + allRooms - secondWeek + allRooms - thirdWeek + allRooms - fourthWeek) + "</td><td>" + ((firstWeek * costOfRoom) + (secondWeek * costOfRoom) + (thirdWeek * costOfRoom)+ (fourthWeek * costOfRoom)) + "</td></tr>")
+
+document.write("</table>");
+
+
+</script>
+</head>
+<body>
+</body>
+</html>
