@@ -1,2 +1,2 @@
 # WebNotes
-Web technology notes
+Web and Internet Technologies Notes
