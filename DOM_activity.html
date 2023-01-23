@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM activity</title>
+  </head>
+  <body>
+    <p id="1"></p>
+    <!--  -->
+    <p id="2">Lets start coding</p>
+    <!--  -->
+    <h2 id="3">UCA</h2>
+    <!--  -->
+    <p id="4"></p>
+    <!--  -->
+    <button id="5">Submit</button>
+    <!--  -->
+    <h3>Content will now be hidden</h3>
+    <!--  -->
+    <h4 id="6">Hiding content</h4>
+    <!--  -->
+    <button onclick="document.getElementById('6').style.display='none'">
+      Press the button
+    </button>
+    <!--  -->
+    <h2>Your name here</h2>
+    <input type="text" name="name" id="7" onchange="upperCase()" />
+    <!--  -->
+    <p onmouseover="change(this)">Move the cursor</p>
+    <!--  -->
+    <script>
+      document.getElementById("1").innerHTML = "Hi, how are you doing";
+      //
+      document.getElementById("2").innerHTML = "Lets play table tennis";
+      //
+      var message = document.getElementById("3").innerHTML;
+      alert("I study at " + message);
+      //
+      document.getElementById("4").innerHTML = "Date : " + Date();
+      //
+      document.getElementById("5").addEventListener("click", submission);
+      function submission() {
+        alert("This form has been successfully submitted!");
+      }
+      //
+      function upperCase() {
+        const x = document.getElementById("7");
+        x.value = x.value.toUpperCase();
+      }
+      //
+      function change(text) {
+        text.innerHTML = "Now, it has been changed";
+      }
+    </script>
+  </body>
+</html>
