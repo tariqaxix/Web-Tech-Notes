@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <h1>Feedback Form</h1>
+    <p>Please fill out this form to help us improve our website</p>
+    <br />
+    <form action="abc.php">
+      Name:
+      <input type="text" size="20" />
+      <br />
+      <br />
+      Comments:
+      <br />
+      <br />
+      <textarea name="text" id="text" cols="30" rows="10">
+Enter text here</textarea
+      >
+      <br />
+      <br />
+      E-mail Address:
+      <input type="email" name="email" id="email" />
+      <br />
+      <br />
+      <b>Things you liked: </b> <br />
+      Site Design<input
+        type="checkbox"
+        name="Site design"
+        id="site-design"
+      />&nbsp;&nbsp; Links<input type="checkbox" name="Links" id="links" />
+      &nbsp; &nbsp; Ease of Use<input
+        type="checkbox"
+        name="Ease of Use"
+        id="Easy"
+      />&nbsp;&nbsp; Images<input
+        type="checkbox"
+        name="Images"
+        id="Images"
+      />&nbsp;&nbsp; Source code<input
+        type="checkbox"
+        name="Source code"
+        id="Source code"
+      />
+      <br /><br />
+      <b>How did you get to know our site</b><br />
+      Search Engine:
+      <input type="radio" name="Radio" id="Search-engine" checked />
+      Links from another sites:
+      <input type="radio" name="Radio" id="Links" />
+      Deitel.com website
+      <input type="radio" name="Radio" id="Deitel.com" />
+      Reference in a book
+      <input type="radio" name="Radio" id="Refernce_in_a_book" />
+      Other
+      <input type="radio" name="Radio" id="Other" />
+      <br />
+      <br />
+      Rate our site:
+      <select name="Rating" id="Rating">
+        <option value="Amazing">Amazing</option>
+        <option value="10">10</option>
+        <option value="9">9</option>
+        <option value="8">8</option>
+        <option value="7">7</option>
+        <option value="6">6</option>
+        <option value="5">5</option>
+        <option value="4">4</option>
+        <option value="3">3</option>
+        <option value="2">2</option>
+        <option value="1">1</option>
+      </select>
+      <br />
+      <br />
+      <button type="submit">Submit</button>
+      <button type="reset">Clear</button>
+    </form>
+  </body>
+</html>
