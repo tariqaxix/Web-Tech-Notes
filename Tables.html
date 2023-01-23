@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      table {
+        width: 100%;
+      }
+
+      th {
+        background-color: greenyellow;
+        border: 0px solid greenyellow;
+      }
+
+      #col1 {
+        background-color: rgb(236, 214, 176);
+      }
+
+      td,
+      th {
+        vertical-align: text-top;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Time</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+        <th>Sunday</th>
+      </tr>
+      <tr>
+        <td id="col1">5:00</td>
+        <td rowspan="4" colspan="5">Dawn Air</td>
+        <td rowspan="4">Dawn Air weekends</td>
+        <td rowspan="2">Sunday Magazine</td>
+      </tr>
+      <tr>
+        <td id="col1">5:30</td>
+      </tr>
+      <tr>
+        <td id="col1">6:00</td>
+        <td rowspan="2">weekends reflections</td>
+      </tr>
+      <tr>
+        <td id="col1">6:30</td>
+      </tr>
+      <tr>
+        <td id="col1">7:00</td>
+        <td colspan="6">Local News</td>
+        <td rowspan="2">Radio U</td>
+      </tr>
+      <tr>
+        <td id="col1">7:30</td>
+        <td colspan="6">World News Feed</td>
+      </tr>
+      <tr>
+        <td id="col1">8:00</td>
+        <td colspan="5" rowspan="4">Classical Roots</td>
+        <td rowspan="3">What can you say?</td>
+        <td rowspan="4">University on the air</td>
+      </tr>
+      <tr>
+        <td id="col1">8:30</td>
+      </tr>
+      <tr>
+        <td id="col1">9:00</td>
+      </tr>
+      <tr>
+        <td id="col1">9:30</td>
+        <td rowspan="3">Animal talk</td>
+      </tr>
+      <tr>
+        <td id="col1">10:00</td>
+        <td colspan="5" rowspan="5">Symphony City</td>
+        <td>Word Play</td>
+      </tr>
+      <tr>
+        <td id="col1">10:30</td>
+        <td>Brain Stew</td>
+      </tr>
+      <tr>
+        <td id="col1">11:00</td>
+        <td rowspan="3">Opera Live from the East Cost</td>
+        <td>The Inner Mind</td>
+      </tr>
+      <tr>
+        <td id="col1">11:30</td>
+        <td>Grammer Rules</td>
+      </tr>
+      <tr>
+        <td id="col1">12:00</td>
+        <td>Weekend Wrap</td>
+      </tr>
+    </table>
+  </body>
+</html>
